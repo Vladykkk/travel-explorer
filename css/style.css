@@ -3,7 +3,6 @@
 
 header {
 	width: 100%;
-	position: fixed;
 	z-index: 999;
 }
 
@@ -16,16 +15,18 @@ header {
 /* Wrapper */
 
 .wrapper {
-	background: url("../img/bg.jpg") center fixed;
+	background: rgba(0, 0, 0, 0.4) url("../img/bg.jpg") center fixed;
+	background-size: cover;
+	background-blend-mode: darken;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 }
 
-/* Content */
+/* Page */
 
-.content {
+.page {
 	padding: 0px 15px;
 	flex: 1 1 auto;
 }
@@ -35,13 +36,14 @@ header {
 .header {
 	width: 100%;
 	padding: 0px 20px;
+	margin-bottom: 40px;
 	top: 0;
 	left: 0;
 	z-index: 50;
 	transition: 0.4s;
 }
 
-.header::before {
+/* .header::before {
 	content: "";
 	height: 100%;
 	width: 100%;
@@ -49,23 +51,30 @@ header {
 	left: 0;
 	position: absolute;
 	z-index: 2;
+} */
+
+.header__container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .header__body {
+	height: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	flex-direction: column;
 }
 
 .header__logo {
-	padding: 60px 0px 30px 0px;
+	padding: 60px 0px 50px 0px;
 }
 
 .header__list {
 	display: flex;
-	gap: 80px;
+	gap: 40px;
 	position: relative;
 	z-index: 2;
 }
@@ -77,16 +86,12 @@ header {
 .header__link::after {
 	content: "";
 	position: absolute;
-	background-color: #6c757d;
-	height: 3px;
+	background-color: #ffffff;
+	height: 2px;
 	width: 0;
 	left: 0;
 	bottom: -10px;
 	transition: all 0.3s;
-}
-
-.header__link:hover {
-	color: #000000;
 }
 
 .header__link:hover::after {
@@ -94,8 +99,8 @@ header {
 }
 
 /* Header Burger */
-
-@media (max-width: 70.688em) {
+/* 
+@media (max-width: 900px) {
 	.header__burger {
 		display: block;
 		height: 20px;
@@ -183,12 +188,70 @@ header {
 	.header__link {
 		font-size: 1.5rem;
 	}
-}
+} */
 
 /* Disabling out of burger menu scroll */
 
-@media (max-width: 70.688em) {
+/* @media (max-width: 900px) {
 	body.lock {
 		overflow: hidden;
 	}
+} */
+
+/* Post */
+
+.post__wrapper {
+	display: flex;
+	flex-direction: column;
+	background: url("../img/main/1.jpg") center no-repeat;
+	background-size: cover;
+	min-height: 330px;
+	padding: 25px 25px 20px 60px;
+}
+
+.post__signature {
+	padding-bottom: 100px;
+	display: flex;
+	justify-content: flex-end;
+	letter-spacing: 1px;
+}
+
+.post__signature p {
+	font-size: 0.65rem;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 30px;
+	padding: 10px 20px;
+}
+
+.post__author {
+	display: flex;
+	margin-bottom: 25px;
+}
+
+.post__info {
+	padding-left: 15px;
+}
+
+.post__name {
+	font-size: 1.125rem;
+	padding-bottom: 7px;
+}
+
+.post__data {
+	font-size: 0.8125rem;
+	font-family: "Lato";
+}
+
+.post__title {
+	font-size: 1.75rem;
+	max-width: 30ch;
+}
+
+.post__description {
+	background-color: #ffffff;
+	font-family: "Lato";
+	color: #000000;
+	min-height: 150px;
+	padding: 35px 50px;
 }
