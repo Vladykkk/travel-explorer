@@ -8,7 +8,6 @@ header {
 
 /* Container max-width */
 [class*="__container"] {
-	max-width: 58.75em;
 	margin: 0 auto;
 }
 
@@ -200,6 +199,10 @@ header {
 
 /* Post */
 
+.post__container {
+	max-width: 800px;
+}
+
 .post__wrapper {
 	display: flex;
 	flex-direction: column;
@@ -207,6 +210,16 @@ header {
 	background-size: cover;
 	min-height: 330px;
 	padding: 25px 25px 20px 60px;
+}
+
+.post__wrapper:nth-child(3) {
+	background: url("../img/main/2.jpg") center no-repeat;
+	background-size: cover;
+}
+
+.post__wrapper:nth-child(5) {
+	background: url("../img/main/3.jpg") center no-repeat;
+	background-size: cover;
 }
 
 .post__signature {
@@ -246,6 +259,7 @@ header {
 .post__title {
 	font-size: 1.75rem;
 	max-width: 30ch;
+	line-height: 35px;
 }
 
 .post__description {
@@ -254,4 +268,115 @@ header {
 	color: #000000;
 	min-height: 150px;
 	padding: 35px 50px;
+}
+
+.post__text {
+	padding-bottom: 20px;
+	max-width: 80ch;
+	font-size: 1.125rem;
+	line-height: 25px;
+}
+
+.post__button {
+	font-size: 1.1rem;
+}
+
+.post__button::after {
+	content: "->";
+	padding-left: 6px;
+}
+
+.post__readmore {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #f1f1f1;
+	min-height: 220px;
+}
+
+.post__readmore p {
+	color: #000000;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+
+.post__blog {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 40px;
+	min-height: 40px;
+	background-color: #8d4fdb;
+}
+
+/* Stories */
+.stories__container {
+	background-color: #ffffff;
+	max-width: 940px;
+	padding: 90px 30px;
+}
+
+.stories__title {
+	margin-bottom: 30px;
+	font-size: 40px;
+	color: #333333;
+	text-align: center;
+}
+
+.stories__subtitle {
+	margin-bottom: 50px;
+	font-size: 24px;
+	color: #a9afb3;
+	text-align: center;
+}
+
+.stories__posts {
+	display: flex;
+	gap: 20px;
+}
+
+.stories__body {
+	min-height: 190px;
+	width: 100%;
+	padding: 25px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: flex-end;
+	background: url("../img/stories/f-1.png") no-repeat center;
+	background-size: cover;
+}
+
+.stories__body:nth-child(2) {
+	background: url("../img/stories/f-2.png") no-repeat center;
+	background-size: cover;
+}
+
+.stories__body:nth-child(3) {
+	background: url("../img/stories/f-3.png") no-repeat center;
+	background-size: cover;
+}
+
+.stories__author {
+	display: flex;
+}
+
+.stories__info {
+	padding-left: 15px;
+}
+
+.stories__name {
+	font-size: 14px;
+	padding: 7px 0;
+}
+
+.stories__data {
+	font-size: 13px;
+	font-family: "Lato";
+}
+
+.stories__description {
+	max-width: 30ch;
+	font-size: 1.125rem;
+	color: #000000;
 }
