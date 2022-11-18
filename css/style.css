@@ -304,6 +304,11 @@ header {
 	padding-left: 6px;
 }
 
+.blog__button:hover {
+	color: #490997;
+	transition: 0.3s all;
+}
+
 .blog__readmore {
 	display: flex;
 	justify-content: center;
@@ -319,13 +324,18 @@ header {
 	padding-bottom: 30px;
 }
 
-.blog__blog {
+.blog__visit {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 20px 40px;
 	min-height: 40px;
 	background-color: #8d4fdb;
+}
+
+.blog__visit:hover {
+	background-color: #490997;
+	transition: 0.3s all;
 }
 
 /* Stories */
@@ -423,6 +433,11 @@ header {
 	color: #8d4fdb;
 }
 
+.stories__read a:hover {
+	color: #490997;
+	transition: 0.3s all;
+}
+
 /* Footer */
 
 .footer {
@@ -444,4 +459,9 @@ header {
 
 .footer a {
 	color: #8d4fdb;
+}
+
+.footer a:hover {
+	color: #490997;
+	transition: 0.3s all;
 }
