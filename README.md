@@ -1,7 +1,6 @@
 # travel-explorer
-This website is about travel
-[link on website](vladykkk.github.io/travel-explorer/)
+Link on this [page](vladykkk.github.io/travel-explorer/)
 
-# Technologies what I use
+# Technologies what I use in this project
 - HTML
 - CSS
